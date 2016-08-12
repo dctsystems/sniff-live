@@ -1,4 +1,4 @@
-<?php
+ <?php
 	session_start(); 
 	
     if(!$_SESSION['user'])
@@ -17,5 +17,5 @@
 <link rel = "icon" href = "Images/Sniff_Scratch.png">
 <link rel="stylesheet" href="style.css" type="text/css" />
 <link rel="stylesheet" href="styleCompiler.css" type="text/css" />
-<title>Sniff.org</title>
+<title>Sniff Live</title>
 </head>
