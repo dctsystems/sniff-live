@@ -13,13 +13,11 @@
 <div id="compiler">
 
 <?php
-    $HOME="../SniffPrivate/Users/".$_SESSION["user"];
-
     $file=basename($_GET['file']);
     if($file)
        {
-        $memFile=$HOME."/".$file.".js.mem";
-        $jsFile= $HOME."/".$file.".js";
+        $memFile="load.php?file=".$file.".js.mem";
+        $jsFile= "load.php?file=".$file.".js";
         include("Includes/runInline.php");
        }
     ?>
