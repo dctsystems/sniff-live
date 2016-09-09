@@ -60,7 +60,7 @@
         print '> Edit </a></td>';
 
         print "<td>";
-        if(file_exists($dir."/".$temp[0].".js"))
+        if(file_exists($dir."/".$temp[0].".js") ||  file_exists($dir."/".$temp[0].".hex"))
             {
             print "<a href='run.php?file=$temp[0]'> Run </a>";
             }

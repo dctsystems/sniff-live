@@ -50,8 +50,13 @@ elseif($parts[0]=="sniff")
 
 elseif($parts[0]=="uno-sniff")
 {
-echo " Arduino Unavailable\n";
-//echo "File:".$parts[1]."\n";
+        $out = array();
+        $filename=escapeshellarg(basename($parts[1]));
+        exec("../SniffPrivate/Sniff/libexec/serverUnoCompile ".$HOME."/".$filename, $out);
+        foreach($out as $line)
+        {
+            echo $line."\n";
+        }
 }
 
 elseif($parts[0]=="mb-sniff")

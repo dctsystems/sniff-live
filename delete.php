@@ -32,6 +32,10 @@
             {
                 unlink($sourceDir. "/". $basename . ".js.mem");
             }
+            if(file_exists($sourceDir. "/". $basename . ".hex"))
+            {
+                unlink($sourceDir. "/". $basename . ".hex");
+            }
         }
 
 
