@@ -14,12 +14,21 @@
 
 <?php
     $file=basename($_GET['file']);
-    if($file)
+    if($file && file_exists($dir."/".$file.".js"))
        {
         $memFile="load.php?file=".$file.".js.mem";
         $jsFile= "load.php?file=".$file.".js";
         include("Includes/runInline.php");
        }
+    else if ($file && file_exists($dir."/".$file.".hex"))
+	{
+	print("Arduino Flashing not Available");
+	}
+    else
+	{
+	print("No Compiled Program Found");
+	}
+
     ?>
 </body>
             </div>
