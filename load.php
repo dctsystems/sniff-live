@@ -1,9 +1,5 @@
-<?php  session_start();
-    if(!$_SESSION['user'])
-    {
-        exit();
-    }
-    $HOME="../SniffPrivate/Users/".$_SESSION["user"];
+<?php 
+include 'Includes/startSession.php';
 
 chdir($HOME);
 

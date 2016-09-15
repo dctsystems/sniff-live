@@ -1,10 +1,5 @@
-<?php session_start();
-
-    if(!$_SESSION['user'])
-    {
-        exit();
-    }
-    $HOME="../SniffPrivate/Users/".$_SESSION["user"];
+<?php
+    include("Includes/startSession.php");
     
 ini_set('display_errors', 'On');
 error_reporting(E_ALL);

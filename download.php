@@ -1,9 +1,6 @@
-<?php session_start();
-    if(!$_SESSION['user'])
-    {
-        exit();
-    }
-    $HOME="../SniffPrivate/Users/".$_SESSION["user"];
+<?php
+
+    include("Includes/startSession.php");
 
 ignore_user_abort(true);
 set_time_limit(0); 

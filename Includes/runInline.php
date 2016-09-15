@@ -99,8 +99,7 @@ setStatus: function(text) {
                        </script>
                        
                        <?php
-                       $path="Users/" . $_SESSION['user'];
-                       chdir($path);
+                       chdir($HOME);
                        ?>
                        
                        <script>

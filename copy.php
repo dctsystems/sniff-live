@@ -1,8 +1,8 @@
-<?php include("Includes/setup.php"); ?>
 
 
 <?php
-    $HOME="../SniffPrivate/Users/".$_SESSION["user"];
+    include("Includes/startSession.php");
+
     $sourceDir = "../SniffPrivate/Users/sys.admin";
     $destDir = $HOME;
     
