@@ -22,7 +22,8 @@
        }
     else if ($file && file_exists($dir."/".$file.".hex"))
 	{
-	print("Arduino Flashing not Available");
+	header("location:download.php?file=".$file."&ext=hex");
+	exit();
 	}
     else
 	{
